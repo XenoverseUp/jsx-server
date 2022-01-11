@@ -1,0 +1,27 @@
+{
+	"name": "expressjsx",
+	"version": "1.0.0",
+	"description": "A web server, created using JSX and Express",
+	"main": "main.js",
+	"scripts": {
+		"build": "babel main.js -d dist && babel pragma.js -d dist ",
+		"start": "npm run build && node dist/main.js",
+		"dev": "npm run build && nodemon dist/main.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/XenoverseUp"
+	},
+	"author": "Can Durmus",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/cli": "^7.16.8",
+		"@babel/core": "^7.16.7",
+		"@babel/plugin-transform-react-jsx": "^7.16.7",
+		"@babel/preset-env": "^7.16.8",
+		"nodemon": "^2.0.15"
+	},
+	"dependencies": {
+		"express": "^4.17.2"
+	}
+}
