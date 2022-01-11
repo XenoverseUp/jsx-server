@@ -1,6 +1,6 @@
 const express = require("express");
 
-const [App, Router, Get, Post, Delete, Put] = Array(6).fill({});
+const [App, Router, Get, Post, Delete, Put] = ["APP", "ROUTER", "GET", "POST", "DELETE", "PUT"];
 
 function pragma(Component, props) {
   const children = Array.prototype.slice.call(arguments, 2);
